@@ -27,7 +27,7 @@ export default function About() {
                   <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary-600 to-accent-500 p-1 mx-auto">
                     <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center">
                       <span className="text-5xl font-display font-bold text-gradient">
-                        DW
+                        DWS
                       </span>
                     </div>
                   </div>
@@ -39,7 +39,7 @@ export default function About() {
                 {/* Name & Role */}
                 <div className="text-center mb-6">
                   <h3 className="text-2xl font-display font-bold text-gray-900 dark:text-white mb-2">
-                    Tu Nombre
+                    Sergio
                   </h3>
                   <p className="text-lg text-gradient font-semibold mb-1">
                     Full Stack Developer
