@@ -56,7 +56,7 @@ export default function Hero() {
               {t.hero.greeting}
             </h2>
             <h1 className="text-5xl sm:text-6xl lg:text-8xl font-display font-bold text-gray-900 dark:text-white leading-tight">
-              <span className="block">Tu Nombre</span>
+              <span className="block">Sergio</span>
               <span className="block text-gradient mt-2">
                 {t.hero.title} {t.hero.subtitle}
               </span>
