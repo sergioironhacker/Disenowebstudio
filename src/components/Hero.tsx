@@ -4,7 +4,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 import { useEffect, useState } from 'react';
 
 export default function Hero() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -63,11 +63,13 @@ export default function Hero() {
             </h1>
 
             <p className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed font-light">
-              {t.language === 'es'
-                ? 'Transformo ideas en productos digitales que inspiran y generan resultados'
-                : 'I transform ideas into digital products that inspire and generate results'
-              }
+            {language === 'es'
+  ? 'Transformo ideas en productos digitales que inspiran y generan resultados'
+  : 'I transform ideas into digital products that inspire and generate results'
+}
             </p>
+
+
 
             <p className="text-lg sm:text-xl text-gray-500 dark:text-gray-500 max-w-3xl mx-auto">
               {t.hero.description}

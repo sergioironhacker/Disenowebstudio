@@ -50,12 +50,16 @@ export default function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <NavLink to="/" className="flex-shrink-0 flex items-center gap-3 group">
-            <Logo size="sm" />
-            <h1 className="text-xl font-display font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-              Diseño Web Studio
-            </h1>
-          </NavLink>
+          <NavLink to="/" className="flex-shrink-0 flex items-center gap-2 group">
+  <Logo size="sm" />
+  <h1
+  className="font-display font-bold text-gray-900 dark:text-white 
+             group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
+>
+  <span className="block sm:hidden text-lg">DW Studio</span>
+  <span className="hidden sm:block text-xl md:text-2xl">Diseño Web Studio</span>
+</h1>
+</NavLink>
 
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
