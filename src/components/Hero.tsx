@@ -50,17 +50,17 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="space-y-6"
+            className="space-y-5"
           >
-            <h2 className="text-2xl sm:text-3xl font-medium text-gray-700 dark:text-gray-300">
+            {/* <h2 className="text-1xl sm:text-3xl font-medium text-gray-700 dark:text-gray-300 ">
               {t.hero.greeting}
-            </h2>
-            <h1 className="text-5xl sm:text-6xl lg:text-8xl font-display font-bold text-gray-900 dark:text-white leading-tight">
+            </h2> */}
+            <h2 className="text-3xl sm:text-6xl lg:text-8xl font-display font-bold text-gray-900 dark:text-white leading-tight">
               <span className="block">Sergio</span>
               <span className="block text-gradient mt-2">
                 {t.hero.title} {t.hero.subtitle}
               </span>
-            </h1>
+            </h2>
 
             <p className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed font-light">
             {language === 'es'
@@ -133,7 +133,10 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          <motion.div
+
+          <br /> <br />
+
+         {/*  <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
@@ -142,7 +145,7 @@ export default function Hero() {
             <div className="w-6 h-10 border-2 border-gray-400 dark:border-gray-600 rounded-full mx-auto flex items-start justify-center p-2">
               <div className="w-1 h-2 bg-gray-400 dark:bg-gray-600 rounded-full"></div>
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </motion.section>

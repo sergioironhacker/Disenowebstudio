@@ -95,7 +95,7 @@ export default function CVViewer() {
                 {/* Header */}
                 <div className="text-center border-b-2 border-blue-600 pb-6">
                   <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-                    Tu Nombre
+                    Sergio
                   </h1>
                   <p className="text-xl text-blue-600 dark:text-blue-400 mb-4">
                     Desarrollador Full Stack
