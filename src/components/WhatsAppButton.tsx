@@ -3,7 +3,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 
 export default function WhatsAppButton() {
   const { t } = useLanguage();
-  const phoneNumber = '34123456789';
+  const phoneNumber = '689195597';
   const message = t.language === 'es'
     ? 'Hola! Me interesa hablar sobre un proyecto.'
     : 'Hello! I would like to talk about a project.';

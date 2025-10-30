@@ -53,7 +53,7 @@ export default function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
           <NavLink to="/" className="flex-shrink-0 flex items-center gap-3 group">
             <Logo size="sm" />
             <h1 className="text-xl font-display font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-              Diseño Web
+              Diseño Web Studio
             </h1>
           </NavLink>
 
