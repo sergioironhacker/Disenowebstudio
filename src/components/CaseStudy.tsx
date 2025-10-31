@@ -1,14 +1,6 @@
 import { useLanguage } from '../contexts/LanguageContext';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import { 
-  CheckCircle, 
-  Target, 
-  Lightbulb, 
-  Rocket, 
-  TrendingUp, 
-  ExternalLink, 
-  Github 
-} from 'lucide-react';
+import { CheckCircle, Target, Lightbulb, Rocket, TrendingUp, ExternalLink, Github } from 'lucide-react';
 
 export default function CaseStudy() {
   const { t } = useLanguage();
@@ -82,7 +74,6 @@ export default function CaseStudy() {
   return (
     <section ref={ref} className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto">
-        {/* Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
             {t.caseStudy.title}
@@ -193,10 +184,7 @@ export default function CaseStudy() {
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               {caseStudyData.challenges.map((challenge, index) => (
-                <div
-                  key={index}
-                  className="bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-800 rounded-2xl p-6 shadow-lg"
-                >
+                <div key={index} className="bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-800 rounded-2xl p-6 shadow-lg">
                   <h4 className="font-bold text-lg text-gray-900 dark:text-white mb-2">
                     {t.language === 'es' ? challenge.title.es : challenge.title.en}
                   </h4>
@@ -254,7 +242,8 @@ export default function CaseStudy() {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-8 py-4 bg-gray-900 dark:bg-gray-700 text-white rounded-xl hover:bg-gray-800 dark:hover:bg-gray-600 transition-all hover:scale-105 shadow-lg font-semibold"
             >
-              <Github className="w-5 h-5" /> {t.projects.viewCode}
+              <Github className="w-5 h-5" />
+              {t.projects.viewCode}
             </a>
             <a
               href={caseStudyData.demo}
@@ -262,7 +251,8 @@ export default function CaseStudy() {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 px-8 py-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all hover:scale-105 shadow-lg font-semibold"
             >
-              <ExternalLink className="w-5 h-5" /> {t.caseStudy.viewProject}
+              <ExternalLink className="w-5 h-5" />
+              {t.caseStudy.viewProject}
             </a>
           </div>
         </div>
