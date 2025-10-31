@@ -254,7 +254,7 @@ export default function CaseStudy() {
               <ExternalLink className="w-5 h-5" />
               {t.caseStudy.viewProject}
             </a>
-          </div>
+          </div> 
         </div>
       </div>
     </section>

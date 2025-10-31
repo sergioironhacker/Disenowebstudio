@@ -142,7 +142,7 @@ export const translations = {
       message: 'Hola! Me interesa hablar sobre un proyecto.',
       tooltip: 'Envíame un mensaje'
     },
-    /* caseStudy: {
+    caseStudy: {
       title: 'Caso de Estudio',
       subtitle: 'Análisis profundo de un proyecto destacado',
       overview: 'Visión General',
@@ -155,7 +155,7 @@ export const translations = {
       challenges: 'Desafíos y Soluciones',
       futureImprovements: 'Mejoras Futuras',
       viewProject: 'Ver Proyecto'
-    } */
+    }
   },
   en: {
     nav: {
@@ -298,7 +298,7 @@ export const translations = {
       message: 'Hi! I\'m interested in talking about a project.',
       tooltip: 'Send me a message'
     },
-   /*  caseStudy: {
+    caseStudy: {
       title: 'Case Study',
       subtitle: 'In-depth analysis of a featured project',
       overview: 'Overview',
@@ -311,6 +311,6 @@ export const translations = {
       challenges: 'Challenges & Solutions',
       futureImprovements: 'Future Improvements',
       viewProject: 'View Project'
-    } */
+    }
   }
 };
