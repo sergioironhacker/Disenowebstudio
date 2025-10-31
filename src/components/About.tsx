@@ -56,6 +56,7 @@ export default function About() {
                   <div className="flex items-center gap-3 text-gray-600 dark:text-gray-400">
                     <MapPin className="w-5 h-5 text-primary-600" />
                     <span className="text-sm">Segovia, España</span>
+                    
                   </div>
                   <div className="flex items-center gap-3 text-gray-600 dark:text-gray-400">
                     <GraduationCap className="w-5 h-5 text-primary-600" />

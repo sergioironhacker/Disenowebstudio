@@ -77,11 +77,13 @@ export default function Footer() {
               </motion.a>
             </div>
             <a
-              href="mailto:tu@email.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=Sergioss772022@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-400 hover:text-blue-400 transition-colors text-sm flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
-              tu@email.com
+              Sergioss772022@gmail.com
             </a>
           </div>
         </div>
