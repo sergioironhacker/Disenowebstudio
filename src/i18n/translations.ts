@@ -112,8 +112,10 @@ export const translations = {
       madeWith: 'Hecho con',
       by: 'por un estudiante de Ironhack',
       rights: 'Todos los derechos reservados',
-      locationCity: 'Segovia',
-      locationCountry: 'España',
+      locationCity1: 'Segovia',
+      locationCountry1: 'España',
+      locationCity2: 'Madrid',
+      locationCountry2: 'España',
       motto: 'Construyendo soluciones digitales con pasión y precisión'
     },
     whyChooseMe: {
