@@ -8,8 +8,10 @@ export default function FloatingCVButton() {
 
   return (
     <a
-      href="/Sergio-Esteban-De-Andres-Cv.pdf"
-      download
+      href="/SergioCV.pdf"
+      download="Sergio-Esteban-De-Andres-CV.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
       className="fixed bottom-24 right-6 z-50 group"
       aria-label={label}
     >
