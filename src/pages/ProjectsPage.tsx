@@ -12,7 +12,7 @@ export default function ProjectsPage() {
       className="pt-16"
     >
       <ProjectsEnhanced />
-      {/* <CaseStudy /> */}
+      <CaseStudy />
     </motion.div>
   );
 }
