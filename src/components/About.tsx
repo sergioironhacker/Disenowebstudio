@@ -25,10 +25,12 @@ export default function About() {
                 {/* Avatar */}
                 <div className="relative -mt-16 mb-6">
                   <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary-600 to-accent-500 p-1 mx-auto">
-                    <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center">
-                      <span className="text-5xl font-display font-bold text-gradient">
-                        DWS
-                      </span>
+                    <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center overflow-hidden">
+                      <img
+                        src="/me.png"
+                        alt="Diseño Web Studio"
+                        className="w-4/5 h-4/5 object-cover rounded-full scale-105"
+                      />
                     </div>
                   </div>
                   <div className="absolute bottom-2 right-1/2 transform translate-x-16 translate-y-2">
