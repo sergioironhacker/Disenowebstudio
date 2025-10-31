@@ -2,14 +2,15 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://diseñowebstudio.com/letra-s.png"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Primary Meta Tags -->
+    <!-- 🔹 Favicon -->
+    <!-- Usa ruta relativa desde /public para que funcione en Vercel -->
+    <link rel="icon" type="image/png" href="/letra-s.png" />
+    <link rel="apple-touch-icon" href="/letra-s.png" />
+
+    <!-- 🔹 Primary Meta Tags -->
+    <title>Diseño Web - Desarrollador Full Stack MERN | Portfolio Profesional</title>
     <meta
       name="title"
       content="Diseño Web - Desarrollador Full Stack MERN | Portfolio Profesional"
@@ -24,16 +25,16 @@
     />
     <meta name="author" content="Sergio - Full Stack Developer" />
     <meta name="robots" content="index, follow" />
-    <meta name="language" content="Spanish, English" />
+    <meta name="language" content="es" />
     <meta name="revisit-after" content="7 days" />
 
-    <!-- Geo Tags -->
+    <!-- 🔹 Geo Tags -->
     <meta name="geo.region" content="ES-SG" />
     <meta name="geo.placename" content="Segovia" />
     <meta name="geo.position" content="40.9429;-4.1088" />
     <meta name="ICBM" content="40.9429, -4.1088" />
 
-    <!-- Open Graph / Facebook / WhatsApp -->
+    <!-- 🔹 Open Graph (Facebook, WhatsApp, LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://diseñowebstudio.com/" />
     <meta
@@ -44,7 +45,6 @@
       property="og:description"
       content="Portfolio profesional de Desarrollador Full Stack especializado en MongoDB, React, Node.js y JavaScript. Proyectos reales, certificaciones y disponible para colaboraciones."
     />
-    <!-- ⚠️ Usa una imagen OG grande, no un icono pequeño -->
     <meta
       property="og:image"
       content="https://diseñowebstudio.com/og-image.jpg"
@@ -55,7 +55,7 @@
     <meta property="og:locale" content="es_ES" />
     <meta property="og:locale:alternate" content="en_US" />
 
-    <!-- Twitter -->
+    <!-- 🔹 Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://diseñowebstudio.com/" />
     <meta
@@ -72,7 +72,7 @@
     />
     <meta name="twitter:creator" content="@tuusuario" />
 
-    <!-- Theme Color -->
+    <!-- 🔹 Theme Colors -->
     <meta
       name="theme-color"
       content="#2563eb"
@@ -84,12 +84,12 @@
       media="(prefers-color-scheme: dark)"
     />
 
-    <!-- Apple -->
+    <!-- 🔹 Apple PWA -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Diseño Web" />
 
-    <!-- Google Fonts -->
+    <!-- 🔹 Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -97,10 +97,10 @@
       rel="stylesheet"
     />
 
-    <title>
-      Diseño Web - Desarrollador Full Stack MERN | Portfolio Profesional
-    </title>
+    <!-- 🔹 Fallback para navegadores antiguos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
