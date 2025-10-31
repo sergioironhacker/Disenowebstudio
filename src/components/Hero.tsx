@@ -91,7 +91,7 @@ export default function Hero() {
               <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
             </a>
             <a
-              href="/cv.pdf"
+              href="/SergioCv.pdf"
               download
               className="group px-10 py-5 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-2 border-gray-200 dark:border-gray-700 rounded-2xl hover:border-blue-600 dark:hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/20 transition-all hover:scale-105 flex items-center gap-3 font-display font-semibold text-lg"
             >

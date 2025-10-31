@@ -45,7 +45,7 @@ export default function CVViewer() {
                 Ver CV Online
               </button>
               <a
-                href="/cv.pdf"
+                href="/SergioCv.pdf"
                 download
                 className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 text-white rounded-full hover:from-blue-700 hover:to-cyan-700 transition-all hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 font-semibold"
               >
@@ -72,7 +72,7 @@ export default function CVViewer() {
               </h3>
               <div className="flex items-center gap-4">
                 <a
-                  href="/cv.pdf"
+                  href="/SergioCv.pdf"
                   download
                   className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                 >
