@@ -157,6 +157,7 @@ export const translations = {
       viewProject: 'Ver Proyecto'
     }
   },
+
   en: {
     nav: {
       home: 'Home',
@@ -270,8 +271,10 @@ export const translations = {
       madeWith: 'Made with',
       by: 'by an Ironhack student',
       rights: 'All rights reserved',
-      locationCity: 'Segovia',
-      locationCountry: 'Spain',
+      locationCity1: 'Segovia',
+      locationCountry1: 'Spain',
+      locationCity2: 'Madrid',
+      locationCountry2: 'Spain',
       motto: 'Building digital solutions with passion and precision'
     },
     whyChooseMe: {
