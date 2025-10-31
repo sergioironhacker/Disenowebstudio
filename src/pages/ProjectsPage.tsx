@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import ProjectsEnhanced from '../components/ProjectsEnhanced';
-/* import CaseStudy from '../components/CaseStudy'; */
+import CaseStudy from '../components/CaseStudy';
 
 export default function ProjectsPage() {
   return (
