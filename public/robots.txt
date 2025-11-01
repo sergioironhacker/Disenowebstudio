@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://diseñowebstudio.com/sitemap.xml
+
+# Evita indexar carpetas internas si las hubiera
+Disallow: /admin/
+Disallow: /api/
+Disallow: /src/

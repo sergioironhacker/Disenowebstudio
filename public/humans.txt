@@ -1,0 +1,11 @@
+/* TEAM */
+Developer: Sergio
+Website: https://diseñowebstudio.com
+Location: Segovia, España
+Twitter: @
+Stack: React, Node.js, MongoDB, JavaScript
+
+/* SITE */
+Last update: 2025/10/31
+Standards: HTML5, CSS3, ES6
+Components: Vite + React

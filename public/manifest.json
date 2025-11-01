@@ -1,0 +1,16 @@
+{
+  "name": "Diseño Web Estudio",
+  "short_name": "Diseño Web",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "description": "Diseño Web Estudio crea páginas web modernas, rápidas y optimizadas para SEO en Segovia y toda España.",
+  "icons": [
+    {
+      "src": "/letra-s.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
