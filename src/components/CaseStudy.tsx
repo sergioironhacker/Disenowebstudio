@@ -67,8 +67,8 @@ export default function CaseStudy() {
       { es: 'Sistema de chat en vivo con clientes', en: 'Live chat system with customers' },
       { es: 'Integración con marketplaces', en: 'Marketplace integration' }
     ],
-    github: 'https://github.com/tuusuario/ecommerce-platform',
-    demo: 'https://ecommerce-demo.vercel.app'
+    github: 'https://github.com/sergioironhacker/',
+    demo: 'https://github.com/sergioironhacker/'
   };
 
   return (
