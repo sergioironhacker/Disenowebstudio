@@ -107,7 +107,7 @@ export default function Hero() {
             className="flex items-center justify-center gap-6 pt-8"
           >
             <a
-              href="https://github.com/tuusuario"
+              href="https://github.com/sergioironhacker"
               target="_blank"
               rel="noopener noreferrer"
               className="group p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-110 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700"
@@ -116,7 +116,7 @@ export default function Hero() {
               <Github className="w-7 h-7 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
             </a>
             <a
-              href="https://linkedin.com/in/tuusuario"
+              href="www.linkedin.com/in/sergioeandres"
               target="_blank"
               rel="noopener noreferrer"
               className="group p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-110 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700"
