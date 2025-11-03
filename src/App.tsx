@@ -14,10 +14,15 @@ const ProjectsPage = lazy(() => import('./pages/ProjectsPage'));
 const CertificatesPage = lazy(() => import('./pages/CertificatesPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 
+
+import AutoScrollToTop from "./components/AutoScrollToTop";
+
 function AnimatedRoutes() {
   const location = useLocation();
 
   return (
+       <>
+    <AutoScrollToTop />
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<HomePage />} />
@@ -26,6 +31,7 @@ function AnimatedRoutes() {
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </AnimatePresence>
+     </>
   );
 }
 
