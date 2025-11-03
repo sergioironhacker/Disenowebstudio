@@ -63,10 +63,10 @@ export default function Hero() {
             </h2>
 
             <p className="text-xl sm:text-2xl lg:text-3xl text-gray-600 dark:text-gray-400 max-w-4xl mx-auto leading-relaxed font-light">
-            {language === 'es'
-  ? 'Transformo ideas en productos digitales que inspiran y generan resultados'
-  : 'I transform ideas into digital products that inspire and generate results'
-}
+              {language === 'es'
+                ? 'Transformo ideas en productos digitales que inspiran y generan resultados'
+                : 'I transform ideas into digital products that inspire and generate results'
+              }
             </p>
 
 
@@ -116,7 +116,7 @@ export default function Hero() {
               <Github className="w-7 h-7 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
             </a>
             <a
-              href="www.linkedin.com/in/sergioeandres"
+              href="https://www.linkedin.com/in/sergioeandres"
               target="_blank"
               rel="noopener noreferrer"
               className="group p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-110 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700"
@@ -125,9 +125,11 @@ export default function Hero() {
               <Linkedin className="w-7 h-7 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
             </a>
             <a
-              href="mailto:tu@email.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=Sergioss772022@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-110 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700"
-              aria-label="Email"
+              aria-label="Enviar correo"
             >
               <Mail className="w-7 h-7 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
             </a>
@@ -136,7 +138,7 @@ export default function Hero() {
 
           <br /> <br />
 
-         {/*  <motion.div
+          {/*  <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 0.8 }}
