@@ -26,8 +26,8 @@ const projects = [
       'Arquitectura de microservicios',
       'Gestión de estado complejo en React'
     ],
-    github: 'https://github.com/tuusuario/proyecto1',
-    demo: 'https://proyecto1.vercel.app'
+    github: 'https://github.com/sergioironhacker',
+    demo: 'https://github.com/sergioironhacker'
   },
   {
     id: 2,
@@ -51,8 +51,8 @@ const projects = [
       'TypeScript avanzado con React',
       'Patrones de diseño para aplicaciones colaborativas'
     ],
-    github: 'https://github.com/tuusuario/proyecto2',
-    demo: 'https://proyecto2.vercel.app'
+    github: 'https://github.com/sergioironhacker',
+    demo: 'https://github.com/sergioironhacker'
   },
   {
     id: 3,
@@ -76,8 +76,8 @@ const projects = [
       'Visualización de datos con Chart.js',
       'Automatización de tareas con Node.js'
     ],
-    github: 'https://github.com/tuusuario/proyecto3',
-    demo: 'https://proyecto3.vercel.app'
+    github: 'https://github.com/sergioironhacker',
+    demo: 'https://github.com/sergioironhacker'
   },
   {
     id: 4,
@@ -101,8 +101,8 @@ const projects = [
       'Geolocalización en aplicaciones web',
       'UX/UI para aplicaciones de datos en tiempo real'
     ],
-    github: 'https://github.com/tuusuario/proyecto4',
-    demo: 'https://proyecto4.vercel.app'
+    github: 'https://github.com/sergioironhacker',
+    demo: 'https://github.com/sergioironhacker'
   },
   {
     id: 5,
@@ -126,8 +126,8 @@ const projects = [
       'Indexación y búsqueda en MongoDB',
       'SEO para aplicaciones Single Page'
     ],
-    github: 'https://github.com/tuusuario/proyecto5',
-    demo: 'https://proyecto5.vercel.app'
+    github: 'https://github.com/sergioironhacker',
+    demo: 'https://github.com/sergioironhacker'
   },
   {
     id: 6,
@@ -151,8 +151,8 @@ const projects = [
       'Generación de código dinámico',
       'Sistemas de diseño escalables con Tailwind'
     ],
-    github: 'https://github.com/tuusuario/proyecto6',
-    demo: 'https://proyecto6.vercel.app'
+    github: 'https://github.com/sergioironhacker',
+    demo: 'https://github.com/sergioironhacker'
   }
 ];
 
