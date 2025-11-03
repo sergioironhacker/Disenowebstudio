@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Heart, MapPin } from 'lucide-react';
+import { Github, Linkedin, Mail, Heart, MapPin, Instagram, Map } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -6,8 +6,6 @@ import { useLanguage } from '../contexts/LanguageContext';
 export default function Footer() {
   const { t } = useLanguage();
   const currentYear = new Date().getFullYear();
-
-  // Forzar español como idioma por defecto
   const lang = t.language || 'es';
 
   return (
@@ -18,7 +16,7 @@ export default function Footer() {
           {/* --- Columna: Info general --- */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Diseño Web
+              Diseño Web Studio
             </h3>
 
             <p className="text-gray-400 leading-relaxed mb-4">
@@ -49,6 +47,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="text-gray-400 hover:text-blue-400 transition-all hover:translate-x-1 inline-block"
                 >
                   {t.nav.home}
@@ -57,6 +56,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/projects"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="text-gray-400 hover:text-blue-400 transition-all hover:translate-x-1 inline-block"
                 >
                   {t.nav.projects}
@@ -65,6 +65,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/certificates"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="text-gray-400 hover:text-blue-400 transition-all hover:translate-x-1 inline-block"
                 >
                   {t.nav.certificates}
@@ -73,6 +74,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/contact"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="text-gray-400 hover:text-blue-400 transition-all hover:translate-x-1 inline-block"
                 >
                   {t.nav.contact}
@@ -84,9 +86,9 @@ export default function Footer() {
           {/* --- Columna: Redes sociales y contacto --- */}
           <div>
             <h4 className="text-lg font-semibold mb-4">{t.footer.followMe}</h4>
-            <div className="flex gap-4 mb-4">
+            <div className="flex gap-4 mb-4 flex-wrap">
               <motion.a
-                href="https://github.com/tuusuario"
+                href="https://github.com/sergioironhacker"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-all"
@@ -96,8 +98,9 @@ export default function Footer() {
               >
                 <Github className="w-5 h-5" />
               </motion.a>
+
               <motion.a
-                href="https://linkedin.com/in/tuusuario"
+                href="https://www.linkedin.com/in/sergioeandres"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-all"
@@ -107,7 +110,32 @@ export default function Footer() {
               >
                 <Linkedin className="w-5 h-5" />
               </motion.a>
+
+              <motion.a
+                href="https://www.instagram.com/diseniowebstudio?utm_source=qr&igsh=YzNqcjZjdnAxZ3lt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-all"
+                aria-label="Instagram"
+                whileHover={{ scale: 1.1, rotate: 12 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Instagram className="w-5 h-5" />
+              </motion.a>
+
+              <motion.a
+                href="https://share.google/vkDc6vudusbyBDUHg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-gray-800 hover:bg-gray-700 rounded-full transition-all"
+                aria-label="Google Business"
+                whileHover={{ scale: 1.1, rotate: 12 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Map className="w-5 h-5" />
+              </motion.a>
             </div>
+
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=Sergioss772022@gmail.com"
               target="_blank"
@@ -128,13 +156,13 @@ export default function Footer() {
             viewport={{ once: true }}
             className="text-center space-y-4"
           >
-            {/* Frase y botón forzados a español si no se ha cambiado el idioma */}
             <p className="text-xl font-display font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
               {lang === 'es' ? '¿Quieres trabajar conmigo?' : 'Want to work with me?'}
             </p>
 
             <Link
               to="/contact"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="inline-block px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-xl hover:from-blue-700 hover:to-cyan-600 transition-all hover:scale-105 font-semibold shadow-lg hover:shadow-blue-500/50"
             >
               {lang === 'es' ? 'Contáctame' : 'Contact Me'}
