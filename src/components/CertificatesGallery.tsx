@@ -8,7 +8,7 @@ const certificates = [
     title: 'Full Stack Web Development',
     issuer: 'Ironhack',
     date: '2024',
-    image: 'https://images.pexels.com/photos/6693655/pexels-photo-6693655.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/Certificado-ironhack.png',
     description: 'Bootcamp intensivo de desarrollo web full stack',
     skills: ['React', 'Node.js', 'MongoDB', 'Express']
   },
@@ -17,7 +17,7 @@ const certificates = [
     title: 'JavaScript Advanced',
     issuer: 'Ironhack',
     date: '2024',
-    image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/certificado-js.png',
     description: 'Certificación en JavaScript avanzado y ES6+',
     skills: ['ES6+', 'Async/Await', 'Promises', 'Closures']
   },

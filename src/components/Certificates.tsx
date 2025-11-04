@@ -5,22 +5,22 @@ const certificates = [
     id: 1,
     title: 'Full Stack Web Development',
     issuer: 'Ironhack',
-    date: '2024',
-    image: 'https://images.pexels.com/photos/6693655/pexels-photo-6693655.jpeg?auto=compress&cs=tinysrgb&w=800',
+    date: '2022',
+    image: '/Certificado-ironhack.png',
     description: 'Bootcamp intensivo de desarrollo web full stack'
   },
   {
     id: 2,
     title: 'JavaScript Advanced',
     issuer: 'Ironhack',
-    date: '2024',
-    image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800',
+    date: '2023',
+    image: '/certificado-js.png',
     description: 'Certificación en JavaScript avanzado y ES6+'
   },
   {
     id: 3,
     title: 'React Development',
-    issuer: 'Ironhack',
+    issuer: 'coddy.tech/',
     date: '2024',
     image: 'https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Especialización en React y desarrollo de aplicaciones SPA'
@@ -29,7 +29,7 @@ const certificates = [
     id: 4,
     title: 'Node.js Backend',
     issuer: 'Ironhack',
-    date: '2024',
+    date: '2025',
     image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Desarrollo de APIs REST con Node.js y Express'
   }
