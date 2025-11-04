@@ -84,10 +84,10 @@ const projects = [
     title: 'Empresa de viajes turisticos Zavata travel',
     description: 'Aplicación para agencia de viajes detallados, mapas interactivos y alertas personalizadas.',
     fullDescription: 'Aplicación para agencia de viajes detallados, mapas interactivos y alertas personalizadas.',
-    image: '/agencia.png',
+    image: '/zavara.png',
     images: [
-      '/agencia2.png',
-      '/agencia3.png'
+      '/zavara1.png',
+      '/zavara2.png'
     ],
     tech: ['React', 'API REST', 'Tailwind CSS', 'OpenWeatherMap'],
     categories: ['React'],
