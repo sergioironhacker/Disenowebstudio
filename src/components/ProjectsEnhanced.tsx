@@ -31,13 +31,13 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Task Manager App',
-    description: 'Aplicación de gestión de tareas con funcionalidades de colaboración en tiempo real y notificaciones.',
+    title: 'Gimnasio bekdoosan Segovia',
+    description: 'Aplicación de gestión del gimansio',
     fullDescription: 'Aplicación de gestión de tareas colaborativa que permite a los equipos trabajar juntos en tiempo real. Incluye tableros tipo Kanban, asignación de tareas, comentarios, adjuntos de archivos, notificaciones en tiempo real con Socket.io, y filtros avanzados. Los usuarios pueden crear espacios de trabajo, invitar colaboradores y hacer seguimiento del progreso de proyectos.',
-    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/gimansio1.png',
     images: [
-      'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=800'
+      '/gimnasio2.png',
+      '/gimnasio3.png'
     ],
     tech: ['React', 'TypeScript', 'Node.js', 'Socket.io', 'MongoDB'],
     categories: ['React', 'Node.js', 'MongoDB'],
@@ -51,8 +51,8 @@ const projects = [
       'TypeScript avanzado con React',
       'Patrones de diseño para aplicaciones colaborativas'
     ],
-    github: 'https://github.com/sergioironhacker',
-    demo: 'https://github.com/sergioironhacker'
+    github: 'https://github.com/sergioironhacker/Gimnasio-Bekdoosan',
+    demo: 'https://bekdoosan.com/'
   },
   {
     id: 3,
