@@ -59,10 +59,10 @@ const projects = [
     title: 'Social Media Dashboard',
     description: 'Dashboard para gestión de redes sociales con análisis de métricas y programación de publicaciones.',
     fullDescription: 'Dashboard integral para gestión de redes sociales que permite a los usuarios conectar múltiples cuentas, programar publicaciones, analizar métricas de engagement, y generar reportes detallados. Incluye visualización de datos con gráficos interactivos, calendario de contenidos, y herramientas de análisis de audiencia.',
-    image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/galeria.png',
     images: [
-      'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800'
+      '/galeria2.png',
+      '/galeria3.png'
     ],
     tech: ['React', 'MongoDB', 'Express', 'Chart.js', 'Node.js'],
     categories: ['React', 'MongoDB', 'Node.js'],
@@ -76,8 +76,8 @@ const projects = [
       'Visualización de datos con Chart.js',
       'Automatización de tareas con Node.js'
     ],
-    github: 'https://github.com/sergioironhacker',
-    demo: 'https://github.com/sergioironhacker'
+    github: 'https://github.com/sergioironhacker/Luciano-Pintor',
+    demo: 'https://luciano-esteban.vercel.app/'
   },
   {
     id: 4,
