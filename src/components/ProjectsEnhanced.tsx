@@ -56,9 +56,9 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Social Media Dashboard',
-    description: 'Dashboard para gestión de redes sociales con análisis de métricas y programación de publicaciones.',
-    fullDescription: 'Dashboard integral para gestión de redes sociales que permite a los usuarios conectar múltiples cuentas, programar publicaciones, analizar métricas de engagement, y generar reportes detallados. Incluye visualización de datos con gráficos interactivos, calendario de contenidos, y herramientas de análisis de audiencia.',
+    title: 'Galeréa de arte para el pintor Luciano',
+    description: 'Dashboard para gestión de Galeréa de arte para el pintor Luciano programación de publicaciones.',
+    fullDescription: 'Dashboard para gestión de Galeréa de arte para el pintor Luciano programación de publicaciones.',
     image: '/galeria.png',
     images: [
       '/galeria2.png',
@@ -81,13 +81,13 @@ const projects = [
   },
   {
     id: 4,
-    title: 'Weather App',
-    description: 'Aplicación del clima con pronósticos detallados, mapas interactivos y alertas personalizadas.',
-    fullDescription: 'Aplicación meteorológica completa que proporciona pronósticos precisos, condiciones actuales, mapas de radar interactivos, y alertas personalizadas. Los usuarios pueden guardar ubicaciones favoritas, ver históricos del clima, y recibir notificaciones sobre condiciones climáticas severas.',
-    image: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Empresa de viajes turisticos Zavata travel',
+    description: 'Aplicación para agencia de viajes detallados, mapas interactivos y alertas personalizadas.',
+    fullDescription: 'Aplicación para agencia de viajes detallados, mapas interactivos y alertas personalizadas.',
+    image: '/agencia.png',
     images: [
-      'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pexels.com/photos/1118877/pexels-photo-1118877.jpeg?auto=compress&cs=tinysrgb&w=800'
+      '/agencia2.png',
+      '/agencia3.png'
     ],
     tech: ['React', 'API REST', 'Tailwind CSS', 'OpenWeatherMap'],
     categories: ['React'],
@@ -101,8 +101,8 @@ const projects = [
       'Geolocalización en aplicaciones web',
       'UX/UI para aplicaciones de datos en tiempo real'
     ],
-    github: 'https://github.com/sergioironhacker',
-    demo: 'https://github.com/sergioironhacker'
+    github: 'https://github.com/sergioironhacker/zavaratravel',
+    demo: 'https://www.zavaratravel.com/'
   },
   {
     id: 5,
