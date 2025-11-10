@@ -8,10 +8,7 @@ User-agent: *
 Allow: /
 
 # Evitar indexar carpetas internas o sensibles
-Disallow: /admin/
-Disallow: /api/
-Disallow: /src/
-Disallow: /node_modules/
+
 
 # Sitemap
 Sitemap: https://www.diseñowebstudio.com/sitemap.xml

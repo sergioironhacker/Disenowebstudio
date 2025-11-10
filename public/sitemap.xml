@@ -6,6 +6,7 @@
     <loc>https://www.diseñowebstudio.com/</loc>
     <lastmod>2025-10-31</lastmod>
     <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
   <!-- Página de proyectos -->
@@ -13,6 +14,7 @@
     <loc>https://www.diseñowebstudio.com/projects</loc>
     <lastmod>2025-10-31</lastmod>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
 
   <!-- Página de contacto -->
@@ -20,6 +22,31 @@
     <loc>https://www.diseñowebstudio.com/contact</loc>
     <lastmod>2025-10-31</lastmod>
     <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+
+  <!-- Página sobre nosotros -->
+  <url>
+    <loc>https://www.diseñowebstudio.com/about</loc>
+    <lastmod>2025-10-31</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Página de servicios -->
+  <url>
+    <loc>https://www.diseñowebstudio.com/services</loc>
+    <lastmod>2025-10-31</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Página del blog -->
+  <url>
+    <loc>https://www.diseñowebstudio.com/blog</loc>
+    <lastmod>2025-10-31</lastmod>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
   </url>
 
 </urlset>
