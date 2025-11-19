@@ -19,10 +19,29 @@ export default function HomePage() {
           name="description"
           content="Diseño Web Estudio ofrece diseño web profesional y desarrollo Full Stack en Segovia. Creamos páginas web modernas, rápidas y optimizadas para SEO para empresas y emprendedores."
         />
+        {/* 🔹 Open Graph / Facebook / LinkedIn */}
+        <meta property="og:title" content="Diseño web profesional y desarrollo Full Stack en Segovia | Diseño Web Estudio" />
+        <meta property="og:description" content="Diseño Web Estudio ofrece diseño web profesional y desarrollo Full Stack en Segovia. Creamos páginas web modernas, rápidas y optimizadas para SEO para empresas y emprendedores." />
+        <meta property="og:image" content="https://www.diseñowebstudio.com/favicon-512.png" />
+        <meta property="og:url" content="https://www.diseñowebstudio.com/" />
+        <meta property="og:type" content="website" />
+
+        {/* 🔹 Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Diseño web profesional y desarrollo Full Stack en Segovia | Diseño Web Estudio" />
+        <meta name="twitter:description" content="Diseño Web Estudio ofrece diseño web profesional y desarrollo Full Stack en Segovia. Creamos páginas web modernas, rápidas y optimizadas para SEO para empresas y emprendedores." />
+        <meta name="twitter:image" content="https://www.diseñowebstudio.com/favicon-32x32.png" />
       </Helmet>
 
-      {/* 🔹 SEO H1 oculto a usuarios (opcional) */}
-      <h1 style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0,0,0,0)' }}>
+      {/* 🔹 SEO H1 oculto a usuarios */}
+      <h1 style={{ 
+        position: 'absolute', 
+        width: 1, 
+        height: 1, 
+        overflow: 'hidden', 
+        clip: 'rect(0,0,0,0)',
+        whiteSpace: 'nowrap'
+      }}>
         Diseño Web Profesional en Segovia — Diseño Web Estudio
       </h1>
 
