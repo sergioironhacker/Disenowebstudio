@@ -12,3 +12,4 @@ Allow: /
 
 # Sitemap
 Sitemap: https://www.diseñowebstudio.com/sitemap.xml
+Sitemap: https://www.xn--diseowebstudio-tnb.com/sitemap.xml
