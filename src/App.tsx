@@ -1,6 +1,8 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { HelmetProvider } from 'react-helmet-async';
+
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import ScrollProgress from './components/ScrollProgress';
@@ -8,30 +10,28 @@ import WhatsAppButton from './components/WhatsAppButton';
 import FloatingCVButton from './components/FloatingCVButton';
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer';
+import AutoScrollToTop from './components/AutoScrollToTop';
 
 const HomePage = lazy(() => import('./pages/HomePage'));
 const ProjectsPage = lazy(() => import('./pages/ProjectsPage'));
 const CertificatesPage = lazy(() => import('./pages/CertificatesPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 
-
-import AutoScrollToTop from "./components/AutoScrollToTop";
-
 function AnimatedRoutes() {
   const location = useLocation();
 
   return (
-       <>
-    <AutoScrollToTop />
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/certificates" element={<CertificatesPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-    </AnimatePresence>
-     </>
+    <>
+      <AutoScrollToTop />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/certificates" element={<CertificatesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
+      </AnimatePresence>
+    </>
   );
 }
 
@@ -58,29 +58,31 @@ function App() {
   }
 
   return (
-    <Router>
-      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-        <ScrollProgress />
-        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+    <HelmetProvider>
+      <Router>
+        <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+          <ScrollProgress />
+          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
-        <Suspense
-          fallback={
-            <div className="min-h-screen flex items-center justify-center">
-              <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
-            </div>
-          }
-        >
-          <main>
-            <AnimatedRoutes />
-          </main>
-        </Suspense>
+          <Suspense
+            fallback={
+              <div className="min-h-screen flex items-center justify-center">
+                <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+              </div>
+            }
+          >
+            <main>
+              <AnimatedRoutes />
+            </main>
+          </Suspense>
 
-        <Footer />
-        <WhatsAppButton />
-        <FloatingCVButton />
-        <ScrollToTop />
-      </div>
-    </Router>
+          <Footer />
+          <WhatsAppButton />
+          <FloatingCVButton />
+          <ScrollToTop />
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 

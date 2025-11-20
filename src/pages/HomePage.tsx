@@ -7,33 +7,18 @@ import Timeline from '../components/Timeline';
 import Skills from '../components/Skills';
 import Statistics from '../components/Statistics';
 import Services from '../components/Services';
-import { Helmet } from 'react-helmet-async';
+import SEO from '../components/SEO';
 
 export default function HomePage() {
   return (
     <>
-      {/* 🔹 SEO Meta Tags */}
-      <Helmet>
-        <title>Diseño web profesional y desarrollo Full Stack en Segovia | Diseño Web Estudio</title>
-        <meta
-          name="description"
-          content="Diseño Web Estudio ofrece diseño web profesional y desarrollo Full Stack en Segovia. Creamos páginas web modernas, rápidas y optimizadas para SEO para empresas y emprendedores."
-        />
-        {/* 🔹 Open Graph / Facebook / LinkedIn */}
-        <meta property="og:title" content="Diseño web profesional y desarrollo Full Stack en Segovia | Diseño Web Estudio" />
-        <meta property="og:description" content="Diseño Web Estudio ofrece diseño web profesional y desarrollo Full Stack en Segovia. Creamos páginas web modernas, rápidas y optimizadas para SEO para empresas y emprendedores." />
-        <meta property="og:image" content="https://www.diseñowebstudio.com/favicon-512.png" />
-        <meta property="og:url" content="https://www.diseñowebstudio.com/" />
-        <meta property="og:type" content="website" />
+      <SEO
+        title="Diseño web profesional y desarrollo Full Stack en Segovia | Diseño Web Estudio"
+        description="Diseño Web Estudio ofrece diseño web profesional y desarrollo Full Stack en Segovia. Creamos páginas web modernas, rápidas y optimizadas para SEO para empresas y emprendedores."
+        url="https://www.diseñowebstudio.com/"
+      />
 
-        {/* 🔹 Twitter Cards */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Diseño web profesional y desarrollo Full Stack en Segovia | Diseño Web Estudio" />
-        <meta name="twitter:description" content="Diseño Web Estudio ofrece diseño web profesional y desarrollo Full Stack en Segovia. Creamos páginas web modernas, rápidas y optimizadas para SEO para empresas y emprendedores." />
-        <meta name="twitter:image" content="https://www.diseñowebstudio.com/favicon-32x32.png" />
-      </Helmet>
-
-      {/* 🔹 SEO H1 oculto a usuarios */}
+      {/* SEO H1 oculto a usuarios */}
       <h1 style={{ 
         position: 'absolute', 
         width: 1, 
@@ -45,7 +30,7 @@ export default function HomePage() {
         Diseño Web Profesional en Segovia — Diseño Web Estudio
       </h1>
 
-      {/* 🔹 Contenido visible */}
+      {/* Contenido visible */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
