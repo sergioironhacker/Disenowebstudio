@@ -5,7 +5,8 @@ export const translations = {
       about: 'Sobre Mí',
       projects: 'Proyectos',
       certificates: 'Certificados',
-      contact: 'Contacto'
+      contact: 'Contacto',
+       faq: 'Preguntas Frecuentes' // ← AÑADIDO
     },
     hero: {
       greeting: 'Hola, soy',
@@ -164,7 +165,8 @@ export const translations = {
       about: 'About',
       projects: 'Projects',
       certificates: 'Certificates',
-      contact: 'Contact'
+      contact: 'Contact',
+       faq: 'FAQ' // ← AÑADIDO
     },
     hero: {
       greeting: 'Hi, I\'m',

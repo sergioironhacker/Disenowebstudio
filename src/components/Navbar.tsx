@@ -10,6 +10,11 @@ interface NavbarProps {
   toggleDarkMode: () => void;
 }
 
+interface NavLinkItem {
+  to: string;
+  label: string;
+}
+
 export default function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
   const { language, setLanguage, t } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,10 +23,7 @@ export default function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -31,11 +33,12 @@ export default function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
     setShowLangMenu(false);
   };
 
-  const navLinks = [
+  const navLinks: NavLinkItem[] = [
     { to: '/', label: t.nav.home },
     { to: '/projects', label: t.nav.projects },
     { to: '/certificates', label: t.nav.certificates },
     { to: '/contact', label: t.nav.contact },
+    { to: '/faq', label: t.nav.faq || 'FAQ' }, // NUEVO
   ];
 
   return (
@@ -50,43 +53,40 @@ export default function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
+          {/* Logo */}
           <NavLink to="/" className="flex-shrink-0 flex items-center gap-2 group">
-  <Logo size="sm" />
-  <h1
-  className="font-display font-bold text-gray-900 dark:text-white 
-             group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
->
-  <span className="block sm:hidden text-lg">DW Studio</span>
-  <span className="hidden sm:block text-xl md:text-2xl">Diseño Web Studio</span>
-</h1>
-</NavLink>
+            <Logo size="sm" />
+            <h1 className="font-display font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+              <span className="block sm:hidden text-lg">DW Studio</span>
+              <span className="hidden sm:block text-xl md:text-2xl">Diseño Web Studio</span>
+            </h1>
+          </NavLink>
 
+          {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <NavLink
-                key={link.to}
-                to={link.to}
-                className={({ isActive }) =>
-                  `relative text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium ${
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.to;
+              return (
+                <NavLink
+                  key={link.to}
+                  to={link.to}
+                  className={`relative text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium ${
                     isActive ? 'text-blue-600 dark:text-blue-400' : ''
-                  }`
-                }
-              >
-                {({ isActive }) => (
-                  <>
-                    {link.label}
-                    {isActive && (
-                      <motion.div
-                        layoutId="navbar-indicator"
-                        className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-600 dark:bg-blue-400"
-                        transition={{ type: 'spring', stiffness: 380, damping: 30 }}
-                      />
-                    )}
-                  </>
-                )}
-              </NavLink>
-            ))}
+                  }`}
+                >
+                  {link.label}
+                  {isActive && (
+                    <motion.div
+                      layoutId="navbar-indicator"
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-600 dark:bg-blue-400"
+                      transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                    />
+                  )}
+                </NavLink>
+              );
+            })}
 
+            {/* Language selector */}
             <div className="relative">
               <button
                 onClick={() => setShowLangMenu(!showLangMenu)}
@@ -122,6 +122,7 @@ export default function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
               )}
             </div>
 
+            {/* Dark mode */}
             <motion.button
               whileHover={{ scale: 1.1, rotate: 12 }}
               whileTap={{ scale: 0.95 }}
@@ -129,14 +130,11 @@ export default function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
               aria-label="Toggle dark mode"
             >
-              {darkMode ? (
-                <Sun className="w-5 h-5 text-yellow-400" />
-              ) : (
-                <Moon className="w-5 h-5 text-gray-700" />
-              )}
+              {darkMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-700" />}
             </motion.button>
           </div>
 
+          {/* Mobile */}
           <div className="flex md:hidden items-center space-x-2">
             <div className="relative">
               <button
@@ -171,32 +169,27 @@ export default function Navbar({ darkMode, toggleDarkMode }: NavbarProps) {
                 </motion.div>
               )}
             </div>
+
             <button
               onClick={toggleDarkMode}
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
               aria-label="Toggle dark mode"
             >
-              {darkMode ? (
-                <Sun className="w-5 h-5 text-yellow-400" />
-              ) : (
-                <Moon className="w-5 h-5 text-gray-700" />
-              )}
+              {darkMode ? <Sun className="w-5 h-5 text-yellow-400" /> : <Moon className="w-5 h-5 text-gray-700" />}
             </button>
+
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors"
               aria-label="Toggle menu"
             >
-              {menuOpen ? (
-                <X className="w-6 h-6 text-gray-700 dark:text-gray-300" />
-              ) : (
-                <Menu className="w-6 h-6 text-gray-700 dark:text-gray-300" />
-              )}
+              {menuOpen ? <X className="w-6 h-6 text-gray-700 dark:text-gray-300" /> : <Menu className="w-6 h-6 text-gray-700 dark:text-gray-300" />}
             </button>
           </div>
         </div>
       </div>
 
+      {/* Mobile Menu */}
       {menuOpen && (
         <motion.div
           initial={{ opacity: 0, height: 0 }}
