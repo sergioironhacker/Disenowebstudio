@@ -106,13 +106,13 @@ const projects = [
   },
   {
     id: 5,
-    title: 'Blog Platform',
-    description: 'Plataforma de blogging con editor de texto enriquecido, categorías y sistema de comentarios.',
-    fullDescription: 'Plataforma completa de blogging con editor de texto enriquecido tipo Medium, sistema de categorías y etiquetas, comentarios anidados, búsqueda full-text, y sistema de reacciones. Los autores pueden gestionar sus publicaciones, ver estadísticas de lecturas, y los lectores pueden seguir a sus autores favoritos.',
-    image: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Sabrian IA Asistente',
+    description: 'Chatbot asistente utilizando api de openAI "Sabrina".',
+    fullDescription: 'Plataforma completa de Chatbot asistente utilizando api de openAI "Sabrina.',
+    image: '/sabrina.png',
     images: [
-      'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pexels.com/photos/261662/pexels-photo-261662.jpeg?auto=compress&cs=tinysrgb&w=800'
+      '/sabrina.png',
+      '/sabrina.png'
     ],
     tech: ['React', 'Node.js', 'MongoDB', 'JWT', 'Quill.js'],
     categories: ['React', 'Node.js', 'MongoDB'],
@@ -126,8 +126,8 @@ const projects = [
       'Indexación y búsqueda en MongoDB',
       'SEO para aplicaciones Single Page'
     ],
-    github: 'https://github.com/sergioironhacker',
-    demo: 'https://github.com/sergioironhacker'
+    github: 'https://github.com/sergioironhacker/Sabrina-ia',
+    demo: 'sabrina-ia.vercel.app'
   },
   {
     id: 6,
@@ -178,118 +178,116 @@ export default function ProjectsEnhanced() {
     setTimeout(() => setSelectedProject(null), 300);
   };
 
- return (
-  <section ref={ref} id="proyectos" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
-    <div className="max-w-7xl mx-auto">
-      <h2 className="text-4xl sm:text-5xl font-bold text-center mb-4 text-gray-900 dark:text-white">
-        Mis Proyectos
-      </h2>
-      <p className="text-center text-gray-600 dark:text-gray-400 mb-8 text-lg">
-        Una selección de mis trabajos más recientes
-      </p>
+  return (
+    <section ref={ref} id="proyectos" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-4 text-gray-900 dark:text-white">
+          Mis Proyectos
+        </h2>
+        <p className="text-center text-gray-600 dark:text-gray-400 mb-8 text-lg">
+          Una selección de mis trabajos más recientes
+        </p>
 
-      {/* Filter Buttons */}
-      <div className="flex flex-wrap justify-center gap-3 mb-12">
-        <Filter className="w-5 h-5 text-gray-500 dark:text-gray-400 mt-2.5" />
-        {categories.map((category) => (
-          <button
-            key={category}
-            onClick={() => setSelectedCategory(category)}
-            className={`px-6 py-2 rounded-full font-medium transition-all ${
-              selectedCategory === category
-                ? 'bg-blue-600 text-white shadow-lg scale-105'
-                : 'bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700'
-            }`}
-          >
-            {category}
-          </button>
-        ))}
-      </div>
+        {/* Filter Buttons */}
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          <Filter className="w-5 h-5 text-gray-500 dark:text-gray-400 mt-2.5" />
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-6 py-2 rounded-full font-medium transition-all ${selectedCategory === category
+                  ? 'bg-blue-600 text-white shadow-lg scale-105'
+                  : 'bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700'
+                }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
 
-      {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredProjects.map((project, index) => (
-          <div
-            key={project.id}
-            className={`bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 group cursor-pointer transform ${
-              isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-            }`}
-            style={{ transitionDelay: `${index * 100}ms` }}
-            onClick={() => openModal(project)}
-          >
-            {/* Imagen ajustada al contenedor */}
-            <div className="relative w-full h-48 overflow-hidden">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <span className="text-white font-semibold text-lg">Ver Detalles</span>
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredProjects.map((project, index) => (
+            <div
+              key={project.id}
+              className={`bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:-translate-y-2 group cursor-pointer transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+                }`}
+              style={{ transitionDelay: `${index * 100}ms` }}
+              onClick={() => openModal(project)}
+            >
+              {/* Imagen ajustada al contenedor */}
+              <div className="relative w-full h-48 overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span className="text-white font-semibold text-lg">Ver Detalles</span>
+                </div>
               </div>
-            </div>
 
-            <div className="p-6 space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                {project.title}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed line-clamp-3">
-                {project.description}
-              </p>
+              <div className="p-6 space-y-4">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed line-clamp-3">
+                  {project.description}
+                </p>
 
-              <div className="flex flex-wrap gap-2">
-                {project.tech.slice(0, 3).map((tech) => (
-                  <span
-                    key={tech}
-                    className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium"
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.slice(0, 3).map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                  {project.tech.length > 3 && (
+                    <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded-full text-sm font-medium">
+                      +{project.tech.length - 3}
+                    </span>
+                  )}
+                </div>
+
+                <div className="flex gap-4 pt-4">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gray-900 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors"
                   >
-                    {tech}
-                  </span>
-                ))}
-                {project.tech.length > 3 && (
-                  <span className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 rounded-full text-sm font-medium">
-                    +{project.tech.length - 3}
-                  </span>
-                )}
-              </div>
-
-              <div className="flex gap-4 pt-4">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-gray-900 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors"
-                >
-                  <Github className="w-4 h-4" />
-                  Código
-                </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  Demo
-                </a>
+                    <Github className="w-4 h-4" />
+                    Código
+                  </a>
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    Demo
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
 
-    {/* Project Modal */}
-    {selectedProject && (
-      <ProjectModal
-        project={selectedProject}
-        isOpen={isModalOpen}
-        onClose={closeModal}
-      />
-    )}
-  </section>
-);
+      {/* Project Modal */}
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          isOpen={isModalOpen}
+          onClose={closeModal}
+        />
+      )}
+    </section>
+  );
 
 }
