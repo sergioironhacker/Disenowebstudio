@@ -6,12 +6,56 @@ import SEO from '../components/SEO';
 export default function ContactPage() {
   return (
     <>
+      {/* 🔹 SEO principal */}
       <SEO
-        title="Contacto | Diseño Web Estudio"
-        description="Contacta con Diseño Web Estudio para solicitar información sobre diseño web profesional y desarrollo Full Stack en Segovia."
+        title="Contacto | Diseño Web Profesional en Segovia | Diseño Web Estudio"
+        description="Ponte en contacto con Diseño Web Estudio para solicitar presupuestos de diseño web profesional, desarrollo Full Stack y proyectos SEO. Atendemos clientes en Segovia y toda España."
         url="https://www.diseñowebstudio.com/contact"
       />
 
+      {/* 🔹 H1 oculto solo para Google */}
+      <h1
+        style={{
+          position: 'absolute',
+          width: 1,
+          height: 1,
+          margin: -1,
+          padding: 0,
+          border: 0,
+          overflow: 'hidden',
+          clip: 'rect(0, 0, 0, 0)',
+        }}
+      >
+        Contacto para Diseño Web Profesional y Desarrollo Web en Segovia
+      </h1>
+
+      {/* 🔹 JSON-LD LocalBusiness para SEO local */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Diseño Web Estudio",
+          "image": "https://www.diseñowebstudio.com/logo.png",
+          "description":
+            "Estudio especializado en diseño web profesional, desarrollo Full Stack y optimización SEO.",
+          "url": "https://www.diseñowebstudio.com",
+          "telephone": "+34 600 000 000",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Segovia",
+            "addressRegion": "Castilla y León",
+            "addressCountry": "España",
+          },
+          "areaServed": "España",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "availableLanguage": ["Spanish", "English"]
+          }
+        })}
+      </script>
+
+      {/* 🔹 Contenido visible */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
