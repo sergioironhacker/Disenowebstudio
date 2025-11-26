@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 interface FAQItem {
     question: string;
     answer: string;
 }
 
+// Tus FAQs originales
 const faqData: FAQItem[] = [
     {
         question: "¿Cuál es el precio de sus servicios?",
@@ -47,11 +49,43 @@ export default function FAQ() {
         setOpenIndex(openIndex === index ? null : index);
     };
 
+    // 🔥 Generamos JSON-LD dinámico para Google
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqData.map((item) => ({
+            "@type": "Question",
+            "name": item.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer,
+            },
+        })),
+    };
+
     return (
         <div className="faq-page pt-32 sm:pt-24 pb-16 px-4 max-w-3xl mx-auto">
+
+            {/* 🔥 SEO con Helmet */}
+            <Helmet>
+                <title>Preguntas frecuentes sobre diseño web en Segovia | Diseño Web Estudio</title>
+                <meta
+                    name="description"
+                    content="Resolvemos las dudas más comunes sobre el diseño web profesional en Segovia: precios, tiempos de entrega, mantenimiento, soporte y personalización."
+                />
+
+                {/* 🔥 FAQ Rich Snippets para Google */}
+                <script type="application/ld+json">
+                    {JSON.stringify(faqSchema)}
+                </script>
+            </Helmet>
+
+            {/* H1 principal SEO */}
             <h1 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900 dark:text-white">
-                <span className="text-blue-600 dark:text-blue-400">P</span>reguntas Frecuentes
+                Preguntas Frecuentes sobre Diseño Web
             </h1>
+
+            {/* Tu lista de FAQs intacta */}
             <div className="faq-list space-y-5">
                 {faqData.map((item, index) => (
                     <div
@@ -70,6 +104,7 @@ export default function FAQ() {
                                 <ChevronDown className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                             </motion.div>
                         </button>
+
                         <AnimatePresence initial={false}>
                             {openIndex === index && (
                                 <motion.div
