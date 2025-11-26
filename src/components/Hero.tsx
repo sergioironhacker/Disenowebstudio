@@ -27,6 +27,14 @@ export default function Hero() {
       transition={{ duration: 0.8 }}
       className="relative min-h-screen flex items-center justify-center pt-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-gradient-to-br from-gray-50 via-blue-50 to-white dark:from-gray-900 dark:via-gray-900 dark:to-gray-800"
     >
+
+      {/* H1 SEO invisible (IMPORTANTE) */}
+      <h1 className="sr-only">
+        {language === "es"
+          ? "Diseño web profesional y desarrollo full stack en Segovia - Sergio Andrés"
+          : "Professional Web Design and Full Stack Development in Spain - Sergio Andrés"}
+      </h1>
+
       {/* Fondo animado */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
@@ -47,6 +55,7 @@ export default function Hero() {
 
       <div className="max-w-7xl w-full mx-auto relative z-10">
         <div className="text-center space-y-12">
+
           {/* Títulos */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -80,9 +89,9 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
           >
-            {/* Botón contacto directo a teléfono */}
             <a
               href="tel:+34689195597"
+              aria-label="Llamar por teléfono a Sergio"
               className="group px-10 py-5 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-2xl hover:from-blue-700 hover:to-cyan-600 transition-all hover:scale-105 shadow-2xl hover:shadow-blue-500/50 font-display font-semibold text-lg flex items-center gap-3"
             >
               <Phone className="w-6 h-6" />
@@ -90,10 +99,10 @@ export default function Hero() {
               <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
             </a>
 
-            {/* CV */}
             <a
               href="/SergioCv.pdf"
               download
+              aria-label="Descargar curriculum PDF"
               className="group px-10 py-5 bg-white dark:bg-gray-800 text-gray-900 dark:text-white border-2 border-gray-200 dark:border-gray-700 rounded-2xl hover:border-blue-600 dark:hover:border-blue-400 hover:shadow-xl hover:shadow-blue-500/20 transition-all hover:scale-105 flex items-center gap-3 font-display font-semibold text-lg"
             >
               <Download className="w-6 h-6 group-hover:animate-bounce" />
@@ -112,17 +121,18 @@ export default function Hero() {
               href="https://github.com/sergioironhacker"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visitar GitHub de Sergio"
               className="group p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-110 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700"
-              aria-label="GitHub"
             >
               <Github className="w-7 h-7 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
             </a>
+
             <a
               href="https://www.linkedin.com/in/sergioeandres"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Visitar LinkedIn de Sergio"
               className="group p-4 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all hover:scale-110 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700"
-              aria-label="LinkedIn"
             >
               <Linkedin className="w-7 h-7 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
             </a>
