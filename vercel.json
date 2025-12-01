@@ -1,5 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "diseñowebstudio.com"
+        }
+      ],
+      "destination": "https://www.diseñowebstudio.com/:path*",
+      "permanent": true
+    }
   ]
 }
