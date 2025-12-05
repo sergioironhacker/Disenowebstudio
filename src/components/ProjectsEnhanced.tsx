@@ -131,13 +131,13 @@ const projects = [
   },
   {
     id: 6,
-    title: 'Portfolio Generator',
+    title: 'juego de la serpientes',
     description: 'Herramienta para crear portfolios profesionales de forma rápida con plantillas personalizables.',
     fullDescription: 'Generador de portfolios que permite a desarrolladores y creativos crear sitios web profesionales sin escribir código. Incluye múltiples plantillas, editor visual drag-and-drop, selector de colores y tipografías, galería de proyectos, formulario de contacto, y exportación del sitio completo.',
-    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/snake.png',
     images: [
-      'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-      'https://images.pexels.com/photos/326503/pexels-photo-326503.jpeg?auto=compress&cs=tinysrgb&w=800'
+      '/snake.png',
+      '/snake.png'
     ],
     tech: ['React', 'TypeScript', 'Vite', 'Tailwind', 'DnD Kit'],
     categories: ['React'],
@@ -151,8 +151,8 @@ const projects = [
       'Generación de código dinámico',
       'Sistemas de diseño escalables con Tailwind'
     ],
-    github: 'https://github.com/sergioironhacker',
-    demo: 'https://github.com/sergioironhacker'
+    github: 'https://github.com/sergioironhacker/Snake-Game',
+    demo: 'https://snake-game-five-indol.vercel.app/'
   }
 ];
 

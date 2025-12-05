@@ -48,12 +48,12 @@ const projects = [
   },
   {
     id: 6,
-    title: 'Portfolio Generator',
-    description: 'Herramienta para crear portfolios profesionales de forma rápida con plantillas personalizables.',
-    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
+    title: 'Juego de la serpiente',
+    description: 'Juego creado puramente con html y css + tailwind para pasar un buen rato.',
+    image: '/snake.png',
     tech: ['React', 'TypeScript', 'Vite', 'Tailwind'],
-    github: 'https://github.com/tuusuario/proyecto6',
-    demo: 'https://proyecto6.vercel.app'
+    github: 'https://github.com/sergioironhacker/Snake-Game',
+    demo: 'juego-de-serpientes-cinco-indol.vercel.app'
   }
 ];
 
