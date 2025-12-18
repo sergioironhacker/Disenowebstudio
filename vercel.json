@@ -5,10 +5,10 @@
       "has": [
         {
           "type": "host",
-          "value": "diseñowebstudio.com"
+          "value": "www.diseñowebstudio.com"
         }
       ],
-      "destination": "https://www.diseñowebstudio.com/:path*",
+      "destination": "https://diseñowebstudio.com/:path*",
       "permanent": true
     }
   ],
