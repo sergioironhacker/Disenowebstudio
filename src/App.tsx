@@ -17,6 +17,8 @@ const ProjectsPage = lazy(() => import('./pages/ProjectsPage'));
 const CertificatesPage = lazy(() => import('./pages/CertificatesPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const FAQPage = lazy(() => import('./pages/FAQ'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -30,6 +32,8 @@ function AnimatedRoutes() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/certificates" element={<CertificatesPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route path="/faq" element={<FAQPage />} />  {/* ← NUEVA RUTA */}
         </Routes>
       </AnimatePresence>
