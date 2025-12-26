@@ -14,18 +14,7 @@ export default function ContactPage() {
       />
 
       {/* 🔹 H1 oculto solo para Google */}
-      <h1
-        style={{
-          position: 'absolute',
-          width: 1,
-          height: 1,
-          margin: -1,
-          padding: 0,
-          border: 0,
-          overflow: 'hidden',
-          clip: 'rect(0, 0, 0, 0)',
-        }}
-      >
+      <h1 className="sr-only">
         Contacto para Diseño Web Profesional y Desarrollo Web en Segovia
       </h1>
 
@@ -39,14 +28,16 @@ export default function ContactPage() {
           "description":
             "Estudio especializado en diseño web profesional, desarrollo Full Stack y optimización SEO.",
           "url": "https://www.diseñowebstudio.com",
-          "telephone": "+34 600 000 000",
+          "telephone": "+34 689195597",
           "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Via Roma 12",
             "addressLocality": "Segovia",
+            "postalCode": "40003",
             "addressRegion": "Castilla y León",
-            "addressCountry": "España",
+            "addressCountry": "ES"
           },
-          "areaServed": "España",
+          "areaServed": "ES",
           "contactPoint": {
             "@type": "ContactPoint",
             "contactType": "customer support",

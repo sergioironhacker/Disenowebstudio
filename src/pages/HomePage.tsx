@@ -7,26 +7,34 @@ import Timeline from '../components/Timeline';
 import Skills from '../components/Skills';
 import Statistics from '../components/Statistics';
 import Services from '../components/Services';
-import SEO from '../components/SEO';
+import { Helmet } from 'react-helmet-async';
 
 export default function HomePage() {
   return (
     <>
-      <SEO
-        title="Diseño web profesional y desarrollo Full Stack en Segovia | Diseño Web Estudio"
-        description="Diseño Web Estudio ofrece diseño web profesional y desarrollo Full Stack en Segovia. Creamos páginas web modernas, rápidas y optimizadas para SEO para empresas y emprendedores."
-        url="https://www.diseñowebstudio.com/"
-      />
+      {/* Helmet para SEO */}
+      <Helmet>
+        <title>
+          Diseño Web Profesional y Desarrollo Full Stack en Segovia | Diseño Web Estudio
+        </title>
+        <meta
+          name="description"
+          content="Diseño Web Estudio ofrece diseño web profesional y desarrollo Full Stack en Segovia. Creamos páginas web modernas, rápidas y optimizadas para SEO para empresas y emprendedores."
+        />
+        <link rel="canonical" href="https://www.diseñowebstudio.com/" />
+      </Helmet>
 
       {/* SEO H1 oculto a usuarios */}
-      <h1 style={{ 
-        position: 'absolute', 
-        width: 1, 
-        height: 1, 
-        overflow: 'hidden', 
-        clip: 'rect(0,0,0,0)',
-        whiteSpace: 'nowrap'
-      }}>
+      <h1
+        style={{
+          position: 'absolute',
+          width: 1,
+          height: 1,
+          overflow: 'hidden',
+          clip: 'rect(0,0,0,0)',
+          whiteSpace: 'nowrap'
+        }}
+      >
         Diseño Web Profesional en Segovia — Diseño Web Estudio
       </h1>
 

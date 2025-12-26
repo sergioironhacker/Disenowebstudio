@@ -14,7 +14,7 @@ export default function CertificatesPage() {
         url="https://www.diseñowebstudio.com/certificates"
       />
 
-      {/* 🔹 H1 oculto solo para SEO */}
+      {/* 🔹 H1 SEO oculto */}
       <h1
         style={{
           position: 'absolute',
@@ -30,7 +30,7 @@ export default function CertificatesPage() {
         Certificados Profesionales y Formación en Diseño Web — Diseño Web Estudio
       </h1>
 
-      {/* 🔹 Marcado estructurado: Perfil Profesional + Logros */}
+      {/* 🔹 JSON-LD: Perfil Profesional */}
       <script type="application/ld+json">
         {JSON.stringify({
           "@context": "https://schema.org",
@@ -53,7 +53,23 @@ export default function CertificatesPage() {
             "Certificados oficiales de desarrollo web",
             "Certificaciones en SEO",
             "Logros profesionales en diseño web"
-          ],
+          ]
+        })}
+      </script>
+
+      {/* 🔹 JSON-LD: Organization */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Diseño Web Estudio",
+          "url": "https://www.diseñowebstudio.com",
+          "logo": "https://www.diseñowebstudio.com/favicon-512.png",
+          "sameAs": [
+            "https://github.com/sergioironhacker",
+            "https://www.linkedin.com/in/sergioeandres",
+            "https://www.instagram.com/diseniowebstudio/"
+          ]
         })}
       </script>
 
