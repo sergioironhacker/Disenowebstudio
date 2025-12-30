@@ -8,7 +8,7 @@ export default function ContactPage() {
     <>
       {/* 🔹 SEO principal */}
       <SEO
-        title="Contacto | Diseño Web Profesional en Segovia | Diseño Web Estudio"
+        title="DWS | Diseño Web Profesional en Segovia | Diseño Web Estudio"
         description="Ponte en contacto con Diseño Web Estudio para solicitar presupuestos de diseño web profesional, desarrollo Full Stack y proyectos SEO. Atendemos clientes en Segovia y toda España."
         url="https://www.diseñowebstudio.com/contact"
       />
