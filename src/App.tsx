@@ -1,5 +1,5 @@
 import { useState, useEffect, lazy, Suspense } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -34,7 +34,7 @@ function AnimatedRoutes() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/faq" element={<FAQPage />} />  {/* ← NUEVA RUTA */}
+          <Route path="/faq" element={<FAQPage />} />
         </Routes>
       </AnimatePresence>
     </>
@@ -69,7 +69,6 @@ function App() {
         <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
           <ScrollProgress />
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-
           <Suspense
             fallback={
               <div className="min-h-screen flex items-center justify-center">
@@ -81,7 +80,6 @@ function App() {
               <AnimatedRoutes />
             </main>
           </Suspense>
-
           <Footer />
           <WhatsAppButton />
           <FloatingCVButton />
