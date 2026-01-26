@@ -1,10 +1,10 @@
 # ─────────── Robots.txt para Diseño Web Estudio ───────────
 # Autor: Sergio
-# Dominio principal: https://diseñowebstudio.com
+# Dominio principal: https://www.diseñowebstudio.com
 # Última actualización: 2025-11-05
 
 User-agent: *
 Allow: /
 
 # Sitemap principal (solo uno, usando el dominio canónico)
-Sitemap: https://diseñowebstudio.com/sitemap.xml
+Sitemap: https://www.diseñowebstudio.com/sitemap.xml
